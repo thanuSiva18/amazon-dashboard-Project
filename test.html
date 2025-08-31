@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper-Local AI-Based Indian Meal Plan Generator</title>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --accent: #a5d6a7;
+            --background: #f9fbe7;
+            --header: #388e3c;
+            --white: #fff;
+            --text: #222;
+            --footer: #e0e0e0;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            background: var(--background);
+            color: var(--text);
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(46,125,50,0.08);
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0.5em 0;
+            display: flex;
+            gap: 1.5em;
+        }
+        .navbar a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            padding: 0.5em 0.8em;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .navbar a:hover {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        header {
+            text-align: center;
+            padding: 2.5em 1em 1.5em 1em;
+            background: var(--header);
+            color: var(--white);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 1.5em 1em 2em 1em;
+        }
+        section {
+            margin-bottom: 2em;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(46,125,50,0.06);
+            padding: 1.5em 1.2em;
+            transition: box-shadow 0.2s;
+        }
+        section:hover {
+            box-shadow: 0 4px 16px rgba(46,125,50,0.13);
+        }
+        section h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.3em;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        section h2:hover {
+            color: var(--header);
+        }
+        .comp-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+            font-size: 1em;
+        }
+        .comp-table th, .comp-table td {
+            padding: 0.7em 0.5em;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: left;
+        }
+        .comp-table th {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .comp-table tr {
+            transition: background 0.2s;
+        }
+        .comp-table tr:hover {
+            background: #f1f8e9;
+        }
+        .tech-stack-list, .features-list {
+            padding-left: 1.2em;
+        }
+        .tech-stack-list li, .features-list li {
+            margin-bottom: 0.5em;
+        }
+        footer {
+            background: var(--footer);
+            text-align: center;
+            padding: 1.2em 0 0.7em 0;
+            font-size: 1em;
+            color: var(--primary);
+            margin-top: 2em;
+            border-top: 1px solid #c8e6c9;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.3em;
+            }
+            main {
+                padding: 1em 0.3em;
+            }
+            section {
+                padding: 1em 0.5em;
+            }
+            .comp-table th, .comp-table td {
+                padding: 0.5em 0.3em;
+                font-size: 0.95em;
+            }
+            .navbar ul {
+                gap: 0.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#comparative">Comparative Research</a></li>
+            <li><a href="#innovation">Innovation</a></li>
+            <li><a href="#techstack">Tech Stack</a></li>
+            <li><a href="#features">Unique Features</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Hyper-Local AI-Based Indian Meal Plan Generator</h1>
+        <p style="margin-top:0.7em; font-size:1.1em;">A Student Research Project on Personalized, Healthy Indian Diets</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About the Project</h2>
+            <p>
+                This project aims to revolutionize meal planning for Indian households by leveraging artificial intelligence and hyper-local data. Our system generates personalized, nutritious meal plans that respect regional tastes, dietary restrictions, and seasonal ingredient availability. The goal is to promote healthier eating habits while celebrating India's culinary diversity.
+            </p>
+        </section>
+        <section id="problem">
+            <h2>Problem Statement</h2>
+            <p>
+                Traditional meal planning apps often ignore local food preferences, ingredient accessibility, and cultural nuances. Users struggle to find meal plans that are both healthy and practical for their region, leading to poor adherence and nutritional gaps.
+            </p>
+        </section>
+        <section id="comparative">
+            <h2>Comparative Research</h2>
+            <div style="overflow-x:auto;">
+                <table class="comp-table">
+                    <thead>
+                        <tr>
+                            <th>Solution</th>
+                            <th>Local Adaptation</th>
+                            <th>AI Personalization</th>
+                            <th>Nutrition Focus</th>
+                            <th>Indian Cuisine Support</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Generic Meal Apps</td>
+                            <td>Low</td>
+                            <td>Basic</td>
+                            <td>Medium</td>
+                            <td>Limited</td>
+                        </tr>
+                        <tr>
+                            <td>Dietician Services</td>
+                            <td>High</td>
+                            <td>Manual</td>
+                            <td>High</td>
+                            <td>Good</td>
+                        </tr>
+                        <tr>
+                            <td>Our Project</td>
+                            <td><strong>Hyper-Local</strong></td>
+                            <td><strong>Advanced AI</strong></td>
+                            <td><strong>High</strong></td>
+                            <td><strong>Comprehensive</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="innovation">
+            <h2>Innovation Highlights</h2>
+            <ul class="features-list">
+                <li>Uses hyper-local ingredient databases for meal suggestions.</li>
+                <li>AI adapts plans to individual health goals and regional cuisines.</li>
+                <li>Seasonal and budget-friendly recommendations.</li>
+                <li>Considers dietary restrictions (vegan, diabetic, etc.).</li>
+                <li>Simple, user-friendly interface for all age groups.</li>
+            </ul>
+        </section>
+        <section id="techstack">
+            <h2>Tech Stack</h2>
+            <ul class="tech-stack-list">
+                <li>Python (AI Model & Data Processing)</li>
+                <li>Pandas & Scikit-learn (ML & Data Analysis)</li>
+                <li>HTML & CSS (Frontend)</li>
+                <li>Streamlit (Prototype UI)</li>
+                <li>Open-source Indian food datasets</li>
+            </ul>
+        </section>
+        <section id="features">
+            <h2>Our Unique Features</h2>
+            <ul class="features-list">
+                <li>Hyper-local ingredient mapping for every Indian region.</li>
+                <li>Personalized meal plans based on health, taste, and availability.</li>
+                <li>Nutrition scoring for each suggested meal.</li>
+                <li>Easy export and print options for meal plans.</li>
+                <li>Continuous learning from user feedback.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <strong>Thanu Siva</strong> &nbsp;|&nbsp; August 2025<br>
+            <span style="font-size:0.95em;">Academic Research – Not for Commercial Use</span>
+        </div>
+    </footer>
+</body>
+</html>
