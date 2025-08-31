@@ -148,7 +148,7 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    file_path = r"C:\Users\thanu\OneDrive\Desktop\folders\E-com dashboard project\amazon.csv"
+    file_path = r"amazon.csv"
     if not os.path.exists(file_path):
         st.error(f"📁 File not found: {file_path}")
         st.info("💡 Please ensure the CSV file exists at the specified path.")
